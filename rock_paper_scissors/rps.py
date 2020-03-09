@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import sys
+import itertools
 
 def rock_paper_scissors(n):
   options = ["rock", "paper", "scissors"]
@@ -22,12 +23,22 @@ def rock_paper_scissors(n):
   return rps_recursive(n)
 
 
+# def rock_paper_scissors(n):
+#   if n==0:
+#     return [[]]
+#   return list(itertools.permutations([["rock"], ["paper"], ["scissors"]],n))
+#   # for i in range(len(optionArr)):
 
-print(rock_paper_scissors(0))
-print(rock_paper_scissors(1))
+
+# print(rock_paper_scissor(2))
+
+
+
+# print(rock_paper_scissors(0))
+# print(rock_paper_scissors(1))
 
 # print(rock_paper_scissors(2))
-options = [['rock'], ['paper'], ['scissors']]
+# options = [['rock'], ['paper'], ['scissors']]
 
 
 if __name__ == "__main__":
